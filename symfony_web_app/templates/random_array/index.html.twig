@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Random Array{% endblock %}
+
+{% block body %}
+    <img src="{{ asset('images/artificial-intelligence.jpg') }}" alt="">
+    <div>
+        <h1> Bu sayfa {{ name }} tarafından oluşturulmuştur.</h1>
+        <h2> Sayfa her yenilediğinde 7 adet rastgele sayı oluşturulur ve diziye eklenir.</h2>
+
+        <ul>
+            <h4>Oluşturulan dizi: </h4>
+            {% for number in random_array %}
+                <li>{{ number }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
