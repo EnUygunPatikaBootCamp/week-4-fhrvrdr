@@ -8,5 +8,8 @@
 * Unit Test,  uygulamamızı birbirinden bağımsız birimler halinde test edip kodun davranışını doğrulayan yazılım geliştirme sürecidir. 
 * Unit Test yazmak için kullandığımız dile özel unit test frameworklerinden yararlanırız. PHP için en bilinenleri PHPUnit ve Pest'tir.
 
+### Symfony Console Uygulaması
+* Hazırlanan uygulamaya "app:create-array" komutu üzerinden erişebilirsiniz.
+
 ### Symfony Web Uygulaması
 * Hazırlanan sayfaya "/random" üzerinden erişebilirsiniz.
