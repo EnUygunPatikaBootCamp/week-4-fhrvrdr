@@ -12,6 +12,7 @@ class CreateArrayCommand extends Command
     // the name of the command (the part after "bin/console")
     protected static $defaultName = 'app:create-array';
 
+
     protected function configure(): void
     {
         $this
@@ -23,6 +24,7 @@ class CreateArrayCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
 
+        // generating random array
         for ($i = 0; $i < $input->getArgument('arraySize'); $i++) {
             $rndArray[$i] = rand(1,1000);
         }
